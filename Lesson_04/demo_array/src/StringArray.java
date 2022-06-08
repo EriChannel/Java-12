@@ -18,6 +18,12 @@ public class StringArray {
             System.out.println(arr[i]);
         }
 
+        for(String str : arr){
+            if(str.equals("Java")){
+                System.out.println(str);
+            }
+        }
+
         int count = 0;
         for(int i = 0; i < n; i++){
             if(arr[i].contains("Java")){

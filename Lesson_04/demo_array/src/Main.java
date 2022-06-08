@@ -5,14 +5,14 @@ public class Main {
     public static void main(String[] args) {
         //<Kiểu dữ liệu>[] <tên mảng>;
 
-        int [] array;
+        int[] array;
 
         //Cấp phát bộ nhớ
         // <Tên mảng> = new <Kiểu dữ liệu>[Kích thước mảng];
 
         array = new int[5];
 
-        String [] strArray = new String[5];
+        String[] strArray = new String[5];
 
         //Gán giá trị cho phần tử mảng
         array[0] = 1;
@@ -25,13 +25,13 @@ public class Main {
         System.out.println("Kích thước mảng: " + array.length);
 
         //Duyệt và in ra các phần tử mảng
-        for(int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + "\t");
         }
         System.out.println();
 
         System.out.println("Phần tử đầu tiên: " + array[0]);
-        System.out.println("Phần tử ở vị trí cuối cùng: " + array[array.length-1]);
+        System.out.println("Phần tử ở vị trí cuối cùng: " + array[array.length - 1]);
 
 
         //Bài tập
@@ -41,13 +41,13 @@ public class Main {
 
         int[] numbers = new int[n];
 
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             System.out.printf("Nhập phần tử numbers[%d]: ", i);
             numbers[i] = sc.nextInt();
         }
 
         System.out.println("Các phần tử mảng là: ");
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             System.out.print(numbers[i] + "\t");
         }
 
@@ -56,7 +56,7 @@ public class Main {
 
         //Tính tổng các phần tử
         int sum = 0;
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             sum += numbers[i]; //sum = sum + numbers[i]
         }
 
@@ -64,9 +64,9 @@ public class Main {
 
 //        Arrays.sort(numbers);
 //        System.out.println(Arrays.toString(numbers));
-        for(int i = 0; i < n; i++){
-            for(int j = i+1; j < n; j++){
-                if(numbers[i] > numbers[j]){
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (numbers[i] > numbers[j]) {
                     int temp = numbers[i];
                     numbers[i] = numbers[j];
                     numbers[j] = temp;
@@ -74,6 +74,9 @@ public class Main {
             }
         }
         System.out.println("Mảng sắp xếp tăng dần");
-        System.out.println(Arrays.toString(numbers));
+
+        for (int num : numbers) {
+            System.out.print(num + "\t");
+        }
     }
 }
