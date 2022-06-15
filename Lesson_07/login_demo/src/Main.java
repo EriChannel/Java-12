@@ -1,3 +1,6 @@
+import model.Users;
+import service.UserService;
+
 import java.util.Scanner;
 
 public class Main {
