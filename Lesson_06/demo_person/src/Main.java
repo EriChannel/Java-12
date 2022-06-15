@@ -57,5 +57,6 @@ public class Main {
                 System.out.println(person.name + " - " + person.age + " - " + person.address);
             }
         }
+
     }
 }

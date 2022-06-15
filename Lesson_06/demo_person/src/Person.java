@@ -3,9 +3,20 @@ public class Person {
     public int age;
     public String address;
 
+    public static String school = "Techmaster";
+
+    public static void myMethod(){
+
+    }
+
+    static {
+
+    }
     public void study(){
         System.out.println(name + " study english");
     }
+
+
 
     public Person(){
         System.out.println("Constructor mặc định");
