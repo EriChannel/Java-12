@@ -14,5 +14,14 @@ public class Util {
         System.out.println("Bạn có thể thực hiện: ");
         System.out.println("1 - Xóa sản phẩm");
         System.out.println("2 - Cập nhật số lượng sản phẩm");
+        System.out.println("0 - Quay về trang chủ");
+    }
+
+    public static void priceMenu(){
+        System.out.println("Bạn có thể thực hiện: ");
+        System.out.println("1 - Dưới 50.000");
+        System.out.println("2 - Từ 50.000 đến 100.000");
+        System.out.println("3 - Trên 100.000");
+        System.out.println("0 - Quay về trang chủ");
     }
 }
