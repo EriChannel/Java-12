@@ -71,8 +71,8 @@ public class App
         }
 
         for(Person p : list){
-            System.out.println(p.getName() + " - " + p.getAge() +
-                    " - " + p.getAddress());
+            System.out.println(p.getFullname() + " - " + p.getAge() +
+                    " - " + p.getAddress() + " - " +p.getDate());
         }
 
     }
